@@ -1,0 +1,24 @@
+.GiphyList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 1100px) {
+  .GiphyList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .GiphyList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .GiphyList {
+    grid-template-columns: 1fr;
+  }
+}
